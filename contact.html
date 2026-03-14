@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Ashenvault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:   #e8c96a;
+      --cream:  #f0e6c0;
+      --dim:    #a89060;
+      --bg:     #1a1208;
+      --panel:  #2a1e0e;
+      --border: #5a3e1e;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--cream);
+      font-family: 'VT323', monospace;
+      font-size: 20px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .logo {
+      max-width: min(320px, 80vw);
+      image-rendering: pixelated;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-box {
+      background: var(--panel);
+      border: 2px solid var(--border);
+      padding: 2.5rem 3rem;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', monospace;
+      font-size: clamp(0.6rem, 2vw, 0.85rem);
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-shadow: 2px 2px 0 #000;
+      margin-bottom: 1.5rem;
+    }
+
+    p { color: var(--dim); font-size: 19px; margin-bottom: 1.5rem; }
+
+    a.email-link {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.55rem;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+    }
+    a.email-link:hover { border-color: var(--gold); }
+
+    .back {
+      margin-top: 2rem;
+      font-size: 17px;
+    }
+    .back a { color: var(--dim); text-decoration: none; }
+    .back a:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <img class="logo" src="assets/MuuzeGames.png" alt="Muuze Games" />
+
+  <div class="contact-box">
+    <h1>// Contact</h1>
+    <p>Questions, feedback, or just want to say hi?</p>
+    <a class="email-link" href="mailto:muuze.games@gmail.com">muuze.games@gmail.com</a>
+  </div>
+
+  <p class="back"><a href="index.html">← Back to Ashenvault</a></p>
+
+</body>
+</html>

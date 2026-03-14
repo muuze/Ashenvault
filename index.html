@@ -165,13 +165,14 @@
       color: var(--gold);
       margin-bottom: 0.8rem;
     }
+    .card.class-card h3 { text-align: center; }
     .card p { color: var(--dim); font-size: 18px; }
     .card .class-sprite {
       display: block;
-      margin: 0.8rem auto 1rem;
+      margin: 0 auto 0.8rem;
       image-rendering: pixelated;
-      width: 64px;
-      height: 104px;
+      width: 96px;
+      height: 156px;
     }
 
     /* ── RARITY COLOURS ───────────────────────────────────── */
@@ -265,7 +266,6 @@
     }
     footer a { color: var(--dim); }
     footer a:hover { color: var(--gold); }
-    footer .studio a { color: var(--gold); }
     footer .studio {
       font-family: 'Press Start 2P', monospace;
       font-size: 0.5rem;
@@ -329,19 +329,19 @@
 <section>
   <h2 class="section-title">// Classes</h2>
   <div class="card-grid">
-    <div class="card">
+    <div class="card class-card">
       <img class="class-sprite" src="assets/wizard_sprite.png" alt="Wizard" />
-      <h3>🧙 Wizard</h3>
+      <h3>Wizard</h3>
       <p>High damage at range, but fragile. Masters of elemental destruction.</p>
     </div>
-    <div class="card">
+    <div class="card class-card">
       <img class="class-sprite" src="assets/archer_sprite.png" alt="Archer" />
-      <h3>🏹 Archer</h3>
+      <h3>Archer</h3>
       <p>Balanced ranged fighter with sharp mobility and consistent output.</p>
     </div>
-    <div class="card">
+    <div class="card class-card">
       <img class="class-sprite" src="assets/barbarian_sprite.png" alt="Barbarian" />
-      <h3>⚔️ Barbarian</h3>
+      <h3>Barbarian</h3>
       <p>Pure melee powerhouse. Highest base HP and thrives with damage stacks.</p>
     </div>
   </div>
@@ -366,6 +366,7 @@
     <div class="powerup"><h4>Haste</h4><p>−10% attack cooldown (multiplicative). Up to ×5.</p></div>
     <div class="powerup"><h4>Gold Fever</h4><p>+75% coin drops. Up to ×3.</p></div>
     <div class="powerup"><h4>Berserker</h4><p>+25% damage when below half HP. Up to ×5.</p></div>
+    <div class="powerup" style="display:flex; align-items:center; justify-content:center; border-style:dashed; opacity:0.6;"><h4 style="margin:0;">...and more</h4></div>
   </div>
 </section>
 
@@ -373,7 +374,10 @@
 
 <!-- ── FOOTER ────────────────────────────────────────────────── -->
 <footer>
-  <p class="studio"><a href="mailto:muuze.games@gmail.com">Muuze Games</a></p>
+  <p class="studio">&copy; Muuze Games</p>
+  <p style="margin-bottom:1rem;">
+    <a href="contact.html">Contact</a>
+  </p>
   <p>
     Built with <a href="https://godotengine.org" target="_blank">Godot 4.4</a> &nbsp;·&nbsp;
     Tileset by <a href="https://0x72.itch.io/dungeontileset-ii" target="_blank">0x72</a> &nbsp;·&nbsp;
